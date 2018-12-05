@@ -1,74 +1,120 @@
 {
-  "id": "sub_3ewdhCIki3FxWt",
-  "items": {
-    "object": "list",
-    "data": [
-      {
-        "id": "si_E5pna31yYZDjbm",
-        "object": "subscription_item",
-        "created": 1543930762,
-        "metadata": {
-        },
-        "plan": {
-          "id": "happity-tiered",
-          "object": "plan",
-          "active": true,
-          "aggregate_usage": "last_during_period",
-          "amount": null,
-          "billing_scheme": "tiered",
-          "created": 1543930340,
-          "currency": "gbp",
-          "interval": "month",
-          "interval_count": 1,
-          "livemode": false,
+  "object": {
+    "id": "sub_E5pnGMyMuU3ctS",
+    "object": "subscription",
+    "application_fee_percent": null,
+    "billing": "charge_automatically",
+    "billing_cycle_anchor": 1543930761,
+    "cancel_at_period_end": false,
+    "canceled_at": null,
+    "created": 1543930761,
+    "current_period_end": 1546609161,
+    "current_period_start": 1543930761,
+    "customer": "cus_E4KaHZMsTt2US0",
+    "days_until_due": null,
+    "default_source": null,
+    "discount": null,
+    "ended_at": null,
+    "items": {
+      "object": "list",
+      "data": [
+        {
+          "id": "si_E5pna31yYZDjbm",
+          "object": "subscription_item",
+          "created": 1543930762,
           "metadata": {
           },
-          "nickname": "happity-tiered",
-          "product": "prod_E3DLcZDcQYu3PS",
-          "tiers": [
-            {
-              "flat_amount": 1500,
-              "unit_amount": null,
-              "up_to": 250
+          "plan": {
+            "id": "happity-tiered",
+            "object": "plan",
+            "active": true,
+            "aggregate_usage": "last_during_period",
+            "amount": null,
+            "billing_scheme": "tiered",
+            "created": 1543930340,
+            "currency": "gbp",
+            "interval": "month",
+            "interval_count": 1,
+            "livemode": false,
+            "metadata": {
             },
-            {
-              "flat_amount": 3000,
-              "unit_amount": null,
-              "up_to": 800
-            },
-            {
-              "flat_amount": 5400,
-              "unit_amount": null,
-              "up_to": null
-            }
-          ],
-          "tiers_mode": "graduated",
-          "transform_usage": null,
-          "trial_period_days": null,
-          "usage_type": "metered"
+            "nickname": "happity-tiered",
+            "product": "prod_E3DLcZDcQYu3PS",
+            "tiers": [
+              {
+                "flat_amount": 1500,
+                "unit_amount": null,
+                "up_to": 250
+              },
+              {
+                "flat_amount": 3000,
+                "unit_amount": null,
+                "up_to": 800
+              },
+              {
+                "flat_amount": 5400,
+                "unit_amount": null,
+                "up_to": null
+              }
+            ],
+            "tiers_mode": "graduated",
+            "transform_usage": null,
+            "trial_period_days": null,
+            "usage_type": "metered"
+          },
+          "subscription": "sub_E5pnGMyMuU3ctS"
+        }
+      ],
+      "has_more": false,
+      "total_count": 1,
+      "url": "/v1/subscription_items?subscription=sub_E5pnGMyMuU3ctS"
+    },
+    "livemode": false,
+    "metadata": {
+    },
+    "plan": {
+      "id": "happity-tiered",
+      "object": "plan",
+      "active": true,
+      "aggregate_usage": "last_during_period",
+      "amount": null,
+      "billing_scheme": "tiered",
+      "created": 1543930340,
+      "currency": "gbp",
+      "interval": "month",
+      "interval_count": 1,
+      "livemode": false,
+      "metadata": {
+      },
+      "nickname": "happity-tiered",
+      "product": "prod_E3DLcZDcQYu3PS",
+      "tiers": [
+        {
+          "flat_amount": 1500,
+          "unit_amount": null,
+          "up_to": 250
         },
-        "subscription": "sub_E5pnGMyMuU3ctS"
-      }
-    ],
-    "has_more": false,
-    "total_count": 1,
-    "url": "/v1/subscription_items?subscription=sub_E5pnGMyMuU3ctS"
-  },
-  "livemode": false,
-  "metadata": {
-  },
-  "object": "subscription",
-  "start": 1394732152,
-  "status": "active",
-  "customer": "abcdefghijklmnop",
-  "cancel_at_period_end": false,
-  "current_period_start": 1394732152,
-  "current_period_end": 1397410552,
-  "ended_at": null,
-  "trial_start": null,
-  "trial_end": null,
-  "canceled_at": null,
-  "quantity": 1,
-  "application_fee_percent": null,
-  "discount": null
+        {
+          "flat_amount": 3000,
+          "unit_amount": null,
+          "up_to": 800
+        },
+        {
+          "flat_amount": 5400,
+          "unit_amount": null,
+          "up_to": null
+        }
+      ],
+      "tiers_mode": "graduated",
+      "transform_usage": null,
+      "trial_period_days": null,
+      "usage_type": "metered"
+    },
+    "quantity": 1,
+    "start": 1543930761,
+    "status": "active",
+    "tax_percent": null,
+    "trial_end": null,
+    "trial_start": null
+  }
 }
