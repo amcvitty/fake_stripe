@@ -112,6 +112,18 @@ describe FakeStripe::StubApp do
       end.to change(FakeStripe, :card_count).by(1)
     end
   end
+  
+  describe "POST /v1/subscription_items/:subscription_item_id/usage_records" do
+    it "increments the usage record" do
+      subscription_item = Stripe::Subscription.retrieve("sub_3ewdhCIki3FxWt").items.first
+      expect do
+        Stripe::UsageRecord.create(quantity: 1,
+                                   timestamp: Time.now.to_i,
+                                   subscription_item: subscription_item.id, action: 'set')
+                                   
+      end.to change(FakeStripe, :usage_record_count).by(1)
+    end
+  end
 
   describe "POST /v1/customers/:customer_id/subscriptions" do
     it "increments the subscription counter" do

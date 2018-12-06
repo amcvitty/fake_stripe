@@ -357,6 +357,17 @@ module FakeStripe
     get '/v1/tokens/:token_id' do
       json_response 200, fixture('retrieve_token')
     end
+    
+    # Usage redords
+    post '/v1/subscription_items/:subscription_item_id' do
+      json_response 200, fixture('retrieve_subscription_item')
+    end
+    
+    # Usage redords
+    post '/v1/subscription_items/:subscription_item_id/usage_records' do
+      FakeStripe.usage_record_count += 1
+      json_response 200, fixture('create_usage_record')
+    end
 
     private
 
