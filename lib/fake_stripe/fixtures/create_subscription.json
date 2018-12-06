@@ -27,5 +27,15 @@
   "canceled_at": null,
   "quantity": 1,
   "application_fee_percent": null,
-  "discount": null
+  "discount": null,
+  "items": {
+    "object": "list",
+    "data": [
+      {
+        "id": "si_E5pna31yYZDjbm",
+        "object": "subscription_item",
+        "created": 1543930762
+	  }
+    ]
+  }
 }
