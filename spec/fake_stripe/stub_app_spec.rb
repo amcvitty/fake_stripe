@@ -134,6 +134,13 @@ describe FakeStripe::StubApp do
       end.to change(FakeStripe, :subscription_count).by(1)
     end
   end
+  
+  describe "POST /v1/checkout/sessions" do
+    it "returns a fake checkout session" do
+      result = Stripe::Checkout::Session.create
+      expect(result.object.object).to eq 'checkout.session'
+    end
+  end
 
   describe "POST /v1/plans" do
     it "increments the plan counter" do

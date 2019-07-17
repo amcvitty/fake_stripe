@@ -358,15 +358,31 @@ module FakeStripe
       json_response 200, fixture('retrieve_token')
     end
     
-    # Usage redords
+    # Usage records
     post '/v1/subscription_items/:subscription_item_id' do
       json_response 200, fixture('retrieve_subscription_item')
     end
     
-    # Usage redords
+    # Usage records
     post '/v1/subscription_items/:subscription_item_id/usage_records' do
       FakeStripe.usage_record_count += 1
       json_response 200, fixture('create_usage_record')
+    end
+    
+    # def stripe_checkout_session
+#       Stripe::Checkout::Session.create(
+#         payment_method_types: ['card'],
+#         customer_email: email,
+#         client_reference_id: self.id,
+#         line_items: tickets_to_line_items,
+#         success_url: Router.new.success_company_event_booking_url(event.company, event, self.id),
+#         cancel_url: Router.new.failure_company_event_booking_url(event.company, event, self.id)
+#       )
+#     end
+    
+    # Checkout session
+    post '/v1/checkout/sessions' do
+      json_response 200, fixture('create_checkout_session')
     end
 
     private

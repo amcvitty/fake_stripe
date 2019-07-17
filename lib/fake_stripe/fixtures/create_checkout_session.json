@@ -1,0 +1,33 @@
+{
+  "object": {
+    "id": "cs_test_xDI3m3fuj2qfG0H8Ehk7VgXcMW43oQWFj6CaaRjjVn7VUUH0tT609EMd",
+    "object": "checkout.session",
+    "billing_address_collection": null,
+    "cancel_url": "http://localhost:3000/happy-hands-club/events/role-play-lane-22-jul-2019/bookings/7776/failure",
+    "client_reference_id": "7776",
+    "customer": "cus_FS4P7oeamMr1bj",
+    "customer_email": "test@email.com",
+    "display_items": [
+      {
+        "amount": 200,
+        "currency": "gbp",
+        "custom": {
+          "description": "Single Session",
+          "images": null,
+          "name": "Happy Hands and Twinkly Toes - 22 Jul 2019 13:00 - 13:45"
+        },
+        "quantity": 1,
+        "type": "custom"
+      }
+    ],
+    "livemode": false,
+    "locale": null,
+    "payment_intent": "pi_1ExAGFLN7zHh6ufNUhJRPmvI",
+    "payment_method_types": [
+      "card"
+    ],
+    "submit_type": null,
+    "subscription": null,
+    "success_url": "http://localhost:3000/happy-hands-club/events/role-play-lane-22-jul-2019/bookings/7776/success"
+  }
+}
