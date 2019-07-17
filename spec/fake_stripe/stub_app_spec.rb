@@ -138,7 +138,7 @@ describe FakeStripe::StubApp do
   describe "POST /v1/checkout/sessions" do
     it "returns a fake checkout session" do
       result = Stripe::Checkout::Session.create
-      expect(result.object.object).to eq 'checkout.session'
+      expect(result.object).to eq 'checkout.session'
     end
   end
 

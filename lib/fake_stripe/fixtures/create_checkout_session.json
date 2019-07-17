@@ -1,5 +1,4 @@
 {
-  "object": {
     "id": "cs_test_xDI3m3fuj2qfG0H8Ehk7VgXcMW43oQWFj6CaaRjjVn7VUUH0tT609EMd",
     "object": "checkout.session",
     "billing_address_collection": null,
@@ -29,5 +28,4 @@
     "submit_type": null,
     "subscription": null,
     "success_url": "http://localhost:3000/happy-hands-club/events/role-play-lane-22-jul-2019/bookings/7776/success"
-  }
 }
