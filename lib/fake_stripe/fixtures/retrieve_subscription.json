@@ -14,6 +14,7 @@
     "metadata": {
     }
   },
+  "latest_invoice": "inv123444",
   "object": "subscription",
   "start": 1394732152,
   "status": "active",
