@@ -369,20 +369,13 @@ module FakeStripe
       json_response 200, fixture('create_usage_record')
     end
     
-    # def stripe_checkout_session
-#       Stripe::Checkout::Session.create(
-#         payment_method_types: ['card'],
-#         customer_email: email,
-#         client_reference_id: self.id,
-#         line_items: tickets_to_line_items,
-#         success_url: Router.new.success_company_event_booking_url(event.company, event, self.id),
-#         cancel_url: Router.new.failure_company_event_booking_url(event.company, event, self.id)
-#       )
-#     end
-    
     # Checkout session
     post '/v1/checkout/sessions' do
       json_response 200, fixture('create_checkout_session')
+    end
+    
+    get '/v1/payment_intents/:payment_intent_id' do
+      json_response 200, fixture('retrieve_payment_intent')
     end
 
     private
