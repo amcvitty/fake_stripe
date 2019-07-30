@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    fake_stripe (0.2.0)
+    fake_stripe (0.3.0)
       capybara
       sinatra
       webmock

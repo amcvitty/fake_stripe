@@ -51,6 +51,9 @@ describe 'Stub app' do
        { route: '/v1/subscriptions/1', method: :post },
     'POST subscriptions' =>
        { route: '/v1/subscriptions', method: :post },
+       
+    #Payment Intents
+    'GET payment_intents/:payment_intent_id' => { route: '/v1/payment_intents/1', method: :get },
 
     # Plans
     'POST plans' => { route: '/v1/plans', method: :post },

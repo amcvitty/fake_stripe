@@ -374,6 +374,7 @@ module FakeStripe
       json_response 200, fixture('create_checkout_session')
     end
     
+    # Payment intents
     get '/v1/payment_intents/:payment_intent_id' do
       json_response 200, fixture('retrieve_payment_intent')
     end
