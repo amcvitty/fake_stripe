@@ -389,7 +389,7 @@ module FakeStripe
     end
     
     # payment methods
-    get '/v1/payment_method/:payment_method_id' do
+    get '/v1/payment_methods/:payment_method_id' do
       json_response 200, fixture('retrieve_payment_method')
     end
 
