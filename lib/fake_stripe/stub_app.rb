@@ -393,7 +393,7 @@ module FakeStripe
       json_response 200, fixture('retrieve_payment_method')
     end
     
-    get '/v1/payment_methods/:payment_method_id/attach' do
+    post '/v1/payment_methods/:payment_method_id/attach' do
       json_response 200, fixture('attach_payment_method')
     end
 
