@@ -378,6 +378,11 @@ module FakeStripe
     get '/v1/payment_intents/:payment_intent_id' do
       json_response 200, fixture('retrieve_payment_intent')
     end
+    
+    # Payment intents
+    post '/v1/setup_intents/:setup_intent_id' do
+      json_response 200, fixture('create_setup_intent')
+    end
 
     private
 
