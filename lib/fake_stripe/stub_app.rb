@@ -380,13 +380,17 @@ module FakeStripe
     end
     
     # Setup intents
-    
     get '/v1/setup_intents/:setup_intent_id' do
       json_response 200, fixture('retrieve_setup_intent')
     end
     
     post '/v1/setup_intents' do
       json_response 200, fixture('create_setup_intent')
+    end
+    
+    # payment methods
+    get '/v1/payment_method/:payment_method_id' do
+      json_response 200, fixture('retrieve_payment_method')
     end
 
     private
