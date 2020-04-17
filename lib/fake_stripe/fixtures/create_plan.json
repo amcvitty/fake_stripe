@@ -5,6 +5,7 @@
   "amount": 2000,
   "currency": "usd",
   "id": "gold21323",
+  "product": "prod_H6KgxUYEEcGZUO",
   "object": "plan",
   "livemode": false,
   "interval_count": 1,
