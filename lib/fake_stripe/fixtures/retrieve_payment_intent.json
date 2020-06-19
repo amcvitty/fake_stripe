@@ -2,5 +2,5 @@
   "id": "PI12345",
   "client_secret": "CS12345",
   "status": "succeeded",
-  "charges": {"object":"list","data":[{"id":"ch_1GvjkuF9wpZ8ZC8Gu0jVCciY"}]}
+  "charges": {"object":"list","data":[{"id":"ch_1GvjkuF9wpZ8ZC8Gu0jVCciY", "balance_transaction":"txn_103cQg2eZvKYlo2CYKVlR2nh"}]}
 }
