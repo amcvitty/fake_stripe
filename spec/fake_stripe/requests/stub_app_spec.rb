@@ -122,8 +122,8 @@ describe 'Stub app' do
     'GET account' => { route: '/v1/account', method: :get },
     # Balance
     'GET balance' => { route: '/v1/balance', method: :get },
-    'GET balance_transaction/:transaction_id' =>
-       { route: '/v1/balance_transaction/1', method: :get },
+    'GET balance_transactions/:transaction_id' =>
+       { route: '/v1/balance_transactions/1', method: :get },
     'GET balance/history/:transaction_id' =>
        { route: '/v1/balance/history/1', method: :get },
     'GET balance/history' => { route: '/v1/balance/history', method: :get },

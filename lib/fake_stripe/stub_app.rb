@@ -335,7 +335,7 @@ module FakeStripe
       json_response 200, fixture('retrieve_balance_transaction')
     end
     
-    get '/v1/balance_transaction/:transaction_id' do
+    get '/v1/balance_transactions/:transaction_id' do
       json_response 200, fixture('retrieve_balance_transaction')
     end
 
