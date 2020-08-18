@@ -1,8 +1,8 @@
 require 'sinatra/base'
+require 'pry'
 
 module FakeStripe
   class StubApp < Sinatra::Base
-
     # Charges
     post '/v1/charges' do
       if params['amount'] && params['amount'].to_i <= 0
@@ -104,6 +104,7 @@ module FakeStripe
     end
 
     [
+      '/v1/subscriptions/',
       '/v1/subscriptions/:subscription_id',
       '/v1/customers/:customer_id/subscriptions/:subscription_id',
     ].each do |path|
