@@ -1,5 +1,4 @@
 require 'sinatra/base'
-require 'pry'
 
 module FakeStripe
   class StubApp < Sinatra::Base
