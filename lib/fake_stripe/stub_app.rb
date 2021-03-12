@@ -141,6 +141,15 @@ module FakeStripe
     post '/v1/subscriptions' do
       json_response 200, fixture('retrieve_subscription')
     end
+    
+    # subscription items
+    get '/v1/subscription_items/:id' do
+      json_response 200, fixture('retrieve_subscription_item')
+    end
+
+    post '/v1/subscription_items/:id' do
+      json_response 200, fixture('retrieve_subscription_item')
+    end
 
     # Plans
     post '/v1/plans' do

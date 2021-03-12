@@ -1,0 +1,21 @@
+{
+  "id": "si_3ewdhCIki3FxWt",
+  "subscription": "sub_3ewdhCIki3FxWt",
+  "object": "subscription_item",
+  "proration_date": 1394732152,
+  "plan": {
+    "interval": "month",
+    "name": "New plan name123",
+    "created": 1386247539,
+    "amount": 2000,
+    "currency": "usd",
+    "id": "gold21323",
+    "object": "plan",
+    "livemode": false,
+    "interval_count": 1,
+    "trial_period_days": null,
+    "metadata": {
+    }
+  },
+  "quantity": 1
+}
