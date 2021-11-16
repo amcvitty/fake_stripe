@@ -22,6 +22,15 @@ describe 'Stub app' do
     'DELETE customers/:customer_id' =>
        { route: '/v1/customers/1', method: :delete },
     'GET customers' => { route: '/v1/customers', method: :get },
+
+    # Customer Balance Transactions
+    'POST customer/:customer_id/balance_transactions' =>
+    { route: '/v1/customers/1/balance_transactions/1', method: :post },
+    'GET customer/:customer_id/balance_transactions/:id' =>
+    { route: '/v1/customers/1/balance_transactions/1', method: :get },
+    'POST customer/:customer_id/balance_transactions/:id' =>
+    { route: '/v1/customers/1/balance_transactions/1', method: :post },
+
     # Cards
     'POST customers/:customer_id/sources' =>
        { route: '/v1/customers/1/sources', method: :post },
@@ -51,7 +60,7 @@ describe 'Stub app' do
        { route: '/v1/subscriptions/1', method: :post },
     'POST subscriptions' =>
        { route: '/v1/subscriptions', method: :post },
-       
+
     #Payment Intents
     'GET payment_intents/:payment_intent_id' => { route: '/v1/payment_intents/1', method: :get },
 

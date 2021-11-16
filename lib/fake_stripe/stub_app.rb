@@ -60,6 +60,25 @@ module FakeStripe
       json_response 200, fixture('list_customers')
     end
 
+    # Customer Balance Transactions
+    post '/v1/customers/:customer_id/balance_transactions' do
+      json_response 200, fixture('balance_transaction')
+    end
+
+    get '/v1/customers/:customer_id/balance_transactions/:id' do
+      json_response 200, fixture('balance_transaction')
+    end
+
+    post '/v1/customers/:customer_id/balance_transactions/:id' do
+      json_response 200, fixture('balance_transaction')
+    end
+
+    # Commented because need a fixture
+    # get '/v1/customers/:customer_id/balance_transactions' do
+    #   json_response 200, fixture('list_balance_transactions')
+    # end
+
+
     # Cards
     post '/v1/customers/:customer_id/sources' do
       FakeStripe.card_count += 1

@@ -1,0 +1,15 @@
+{
+  "id": "cbtxn_1JwT4pLN7zHh6ufNaBh5e4yt",
+  "object": "customer_balance_transaction",
+  "amount": -500,
+  "created": 1637074563,
+  "credit_note": null,
+  "currency": "gbp",
+  "customer": "cus_FoXEM6kr4G8iAV",
+  "description": null,
+  "ending_balance": -500,
+  "invoice": null,
+  "livemode": false,
+  "metadata": null,
+  "type": "adjustment"
+}
