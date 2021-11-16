@@ -141,7 +141,7 @@ module FakeStripe
     post '/v1/subscriptions' do
       json_response 200, fixture('retrieve_subscription')
     end
-    
+
     # subscription items
     get '/v1/subscription_items/:id' do
       json_response 200, fixture('retrieve_subscription_item')
@@ -339,11 +339,11 @@ module FakeStripe
     get '/v1/balance' do
       json_response 200, fixture('retrieve_balance')
     end
-    
+
     get '/v1/balance/history/:transaction_id' do
       json_response 200, fixture('retrieve_balance_transaction')
     end
-    
+
     get '/v1/balance_transactions/:transaction_id' do
       json_response 200, fixture('retrieve_balance_transaction')
     end
@@ -374,42 +374,42 @@ module FakeStripe
     get '/v1/tokens/:token_id' do
       json_response 200, fixture('retrieve_token')
     end
-    
+
     # Usage records
     post '/v1/subscription_items/:subscription_item_id' do
       json_response 200, fixture('retrieve_subscription_item')
     end
-    
+
     # Usage records
     post '/v1/subscription_items/:subscription_item_id/usage_records' do
       FakeStripe.usage_record_count += 1
       json_response 200, fixture('create_usage_record')
     end
-    
+
     # Checkout session
     post '/v1/checkout/sessions' do
       json_response 200, fixture('create_checkout_session')
     end
-    
+
     # Payment intents
     get '/v1/payment_intents/:payment_intent_id' do
       json_response 200, fixture('retrieve_payment_intent')
     end
-    
+
     # Setup intents
     get '/v1/setup_intents/:setup_intent_id' do
       json_response 200, fixture('retrieve_setup_intent')
     end
-    
+
     post '/v1/setup_intents' do
       json_response 200, fixture('create_setup_intent')
     end
-    
+
     # payment methods
     get '/v1/payment_methods/:payment_method_id' do
       json_response 200, fixture('retrieve_payment_method')
     end
-    
+
     post '/v1/payment_methods/:payment_method_id/attach' do
       json_response 200, fixture('attach_payment_method')
     end
